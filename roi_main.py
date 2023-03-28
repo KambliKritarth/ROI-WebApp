@@ -3,9 +3,9 @@ from flask import *
 # initialise Flask as app
 app = Flask("__main__")
 
-@app.route('/', methods="GET")
+@app.route('/', methods=["GET"])
 def index():
-    # where the main page will go
+    # renders the main page
     return render_template("index.html")
 
 # run the webapp
