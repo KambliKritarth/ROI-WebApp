@@ -13,9 +13,23 @@
 
 <body>
 {% block main %}
-    <nav>
+    
         <!-- navbar here -->
-    </nav>
+	<nav id = "navheader">
+		<div id = "navigator">
+			<div id = "logo">
+				<a href="#">
+				<img src= "roiwebapp.png" alt="ROI WebApp" >
+				</img></a>
+			</div>
+			<div class="nav__link">
+				<li><a href = "#">Financial</a></li>	
+				<li><a href = "#">Fitness & Health</a></li>	
+				<li><a href = "#">Math</a></li>	
+			</div>
+		</div>
+	</nav>
+    
 {% endblock %}
     <!-- main block here -->
 
@@ -25,4 +39,43 @@
         <!-- calculator.html goes here -->
     {% endblock %}
     </div>
+<style>
+#navheader{
+background-color: #121212;
+padding-left:25vw;
+
+}
+#navigator{
+	display:flex;
+	flex-direction:row;
+}
+.nav__link{
+	display:flex;
+	flex-direction:row;
+	font-family:"Monospace";
+	font-size:38px;	
+}
+#navigator a{
+	color:#FF00D0;
+}
+a:link{
+	text-decoration:none;
+}
+a:visited{
+	text-decoration:none;
+}
+a:hover{
+	opacity:75%;
+}
+a:active{
+	text-decoration:none;
+}
+@media only screen and (max-width:600px){
+	.nav__link{
+		display:flex;
+		flex-direction:column;
+		font-size:19px;	
+	}
+}
+</style>
 </body>
