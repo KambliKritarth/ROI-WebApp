@@ -1,4 +1,3 @@
-<!-- extentions to other pages for ease of use -->
 {% extends 'layout.html' %}
 
 <div>
@@ -9,5 +8,25 @@
 			footer hehe
 		</p>
 	</div>
+{% endblock %}
+</div>
+
+<div>
+{% block calculator %}
+    <form>
+        <!-- form to input variables to get the calculation -->
+        <button type="button">
+            1
+        </button>
+        <p>
+            first button
+        </p>
+        <button type="button">
+            2
+        </button>
+        <p>
+            second button
+        </p>
+    </form>
 {% endblock %}
 </div>
