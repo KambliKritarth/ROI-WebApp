@@ -17,7 +17,7 @@
 		<div id = "navigator">
 			<div id = "logo">
 				<a href="#">
-				<img src= "roiwebapp.png" alt="ROI WebApp" >
+				<img src={{url_for("static", filename="roiwebapp.png")}} alt="ROI WebApp" >
 				</img></a>
 			</div>
 			<div class="nav__link">
@@ -27,7 +27,8 @@
 			</div>
 		</div>
 	</nav>
-<div id="calculator">
+<div>
+
 {% block calculator %}
 	<!-- calculator here -->
 	<!-- change to content if scaling the webapp -->
