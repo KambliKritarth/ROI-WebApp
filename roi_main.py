@@ -1,9 +1,10 @@
-from flask import *
+from flask import Flask, render_template, url_for
 
 # initialise Flask as app
 app = Flask("__main__")
 
-@app.route('/', methods=["GET"])
+@app.route("/main", methods=["GET", "POST"])
+@app.route("/", methods=["GET", "POST"])
 def index():
     # renders the main page
     return render_template("index.html")
