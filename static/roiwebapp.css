@@ -1,4 +1,3 @@
-
 #navheader {
 background-color: #121212;
 padding-left:25vw;
@@ -11,7 +10,7 @@ padding-left:25vw;
 .nav__link {
 	display:flex;
 	flex-direction:row;
-	font-family:"Space Mono" monospace;
+	font-family:'Space Mono', monospace;
 	font-size:38px;
 }
 	#navigator a{
@@ -35,4 +34,10 @@ a:active {
 		flex-direction:column;
 		font-size:19px;
 	}
+}
+#calc-form {
+    font-family: 'Space Mono', monospace;
+}
+#footer {
+    font-family: 'Space Mono', monospace;
 }
