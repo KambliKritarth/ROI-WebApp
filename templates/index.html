@@ -3,7 +3,7 @@
 <div>
 {% block footer %}
 	<!-- footer here-->
-	<div>
+	<div id="footer">
 		<p>
 			footer hehe
 		</p>
@@ -13,20 +13,16 @@
 
 <div>
 {% block calculator %}
-    <form>
-        <!-- form to input variables to get the calculation -->
-        <button type="button">
-            1
-        </button>
-        <p>
-            first button
-        </p>
-        <button type="button">
-            2
-        </button>
-        <p>
-            second button
-        </p>
+    <form id="calc-form">
+		<!-- form to input variables to get the calculation -->
+		<div class="mb-3">
+			<label for="exampleFormControlInput1" class="form-label">Email address</label>
+			<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+		</div>
+		<div class="mb-3">
+			<label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+			<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+		</div>
     </form>
 {% endblock %}
 </div>
